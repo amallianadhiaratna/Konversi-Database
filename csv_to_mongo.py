@@ -9,7 +9,6 @@ datacsv_read=[]
 with open('filecsv.csv', 'r') as y:
     reader=csv.DictReader(y)
     for i in reader:
-        print(dict(i))
         datacsv_read.append(dict(i))
 
 for item in datacsv_read:
